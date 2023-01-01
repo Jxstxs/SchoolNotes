@@ -1,0 +1,14 @@
+object Form2: TForm2
+  Left = 504
+  Height = 482
+  Top = 298
+  Width = 834
+  Caption = 'Tests'
+  Menu = MainMenu1
+  OnCreate = FormCreate
+  LCLVersion = '1.8.4.0'
+  object MainMenu1: TMainMenu
+    left = 66
+    top = 415
+  end
+end
