@@ -6,16 +6,19 @@ interface
 
 uses
   Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, Menus,
-  StdCtrls;
+  StdCtrls,
+  sn_tests_open, sn_tests_info,
+  sn_note_open,
+  sn_question_info;
 
 type
 
   { TForm1 }
 
   TForm1 = class(TForm)
-    GroupBox1: TGroupBox;
-    Label1: TLabel;
-    Label2: TLabel;
+    Button1: TButton;
+    Button2: TButton;
+    Button3: TButton;
     MainMenu1: TMainMenu;
     Memo1: TMemo;
     MenuItem1: TMenuItem;
@@ -40,9 +43,8 @@ type
     MenuItem7: TMenuItem;
     MenuItem8: TMenuItem;
     MenuItem9: TMenuItem;
+    procedure FormCreate(Sender: TObject);
     procedure FormResize(Sender: TObject);
-    procedure MenuItem16Click(Sender: TObject);
-    procedure MenuItem5Click(Sender: TObject);
   private
 
   public
@@ -57,21 +59,6 @@ implementation
 {$R *.lfm}
 
 { TForm1 }
-
-procedure TForm1.FormResize(Sender: TObject);
-begin
-  // ShowMessage('Dim:' + IntToStr(Form1.Width) + ';' + IntToStr(Form1.Height));
-end;
-
-procedure TForm1.MenuItem16Click(Sender: TObject);
-begin
-
-end;
-
-procedure TForm1.MenuItem5Click(Sender: TObject);
-begin
-
-end;
 
 end.
 

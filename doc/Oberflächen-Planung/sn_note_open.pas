@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, DBGrids,
-  StdCtrls, DbCtrls;
+  StdCtrls, DBCtrls;
 
 type
 
@@ -23,7 +23,6 @@ type
     Edit1: TEdit;
     GroupBox1: TGroupBox;
     Label1: TLabel;
-    Label2: TLabel;
     Label3: TLabel;
     procedure CheckBox2Change(Sender: TObject);
     procedure ComboBox1Change(Sender: TObject);
@@ -59,4 +58,3 @@ begin
 end;
 
 end.
-

@@ -1,53 +1,52 @@
 object Form1: TForm1
-  Left = 768
-  Height = 781
-  Top = 121
-  Width = 840
+  Left = 500
+  Height = 722
+  Top = 89
+  Width = 838
   Caption = 'Notizen'
-  ClientHeight = 761
-  ClientWidth = 840
+  ClientHeight = 702
+  ClientWidth = 838
   Menu = MainMenu1
+  OnCreate = FormCreate
   OnResize = FormResize
-  LCLVersion = '1.8.4.0'
+  LCLVersion = '2.2.4.0'
   object Memo1: TMemo
     Left = 8
-    Height = 688
-    Top = 64
+    Height = 656
+    Top = 8
     Width = 824
     Lines.Strings = (
       'Memo1'
     )
     TabOrder = 0
   end
-  object GroupBox1: TGroupBox
-    Left = 8
-    Height = 52
-    Top = 4
-    Width = 824
-    Caption = 'Informationen'
-    ClientHeight = 32
-    ClientWidth = 820
+  object Button1: TButton
+    Left = 566
+    Height = 25
+    Top = 672
+    Width = 266
+    Caption = 'Schließen'
     TabOrder = 1
-    object Label1: TLabel
-      Left = 8
-      Height = 15
-      Top = 0
-      Width = 53
-      Caption = 'Titel: ........'
-      ParentColor = False
-    end
-    object Label2: TLabel
-      Left = 8
-      Height = 15
-      Top = 16
-      Width = 36
-      Caption = 'Datum'
-      ParentColor = False
-    end
+  end
+  object Button2: TButton
+    Left = 292
+    Height = 25
+    Top = 672
+    Width = 266
+    Caption = 'Speichern'
+    TabOrder = 2
+  end
+  object Button3: TButton
+    Left = 8
+    Height = 25
+    Top = 672
+    Width = 266
+    Caption = 'Zurücksetzen'
+    TabOrder = 3
   end
   object MainMenu1: TMainMenu
-    left = 32
-    top = 656
+    Left = 256
+    Top = 672
     object MenuItem3: TMenuItem
       Caption = 'SNotes'
       object MenuItem18: TMenuItem
@@ -69,7 +68,6 @@ object Form1: TForm1
         Caption = 'Öffnen'
         object MenuItem16: TMenuItem
           Caption = 'Test'
-          OnClick = MenuItem16Click
         end
         object MenuItem17: TMenuItem
           Caption = 'Frage'
@@ -86,7 +84,6 @@ object Form1: TForm1
       end
       object MenuItem5: TMenuItem
         Caption = 'Öffnen'
-        OnClick = MenuItem5Click
       end
       object MenuItem7: TMenuItem
         Caption = 'Speichern'
