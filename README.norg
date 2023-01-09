@@ -1,0 +1,42 @@
+
+* Notes for mich
+
+** Todos
+   - ( ) Datum zu Test Table hinzufügen
+   - ( ) Speicherbutton hinzufügen (sn_test_info -> Anmerkungen)
+   - ( ) Groupboxes um Funktionalitäten übersichtlich zu gruppieren
+   - ( ) Test Zustand hinzufügen (nicht/geschrieben)
+   - ( ) Erstell Datum für Tests und Fragen
+
+** Ordner Struktur
+
+*** Notes/
+**** settings.conf
+**** Test_Notes/
+***** data.db
+***** notes/
+****** 202301141308
+****** 202301141425
+
+** Variabeln
+
+** Datentypen
+*** sn_config
+    @code pascal
+    type
+        sn_config = record
+            open_recent: Boolean;
+            recent_notes: String;
+        end;
+    end;
+    @end
+
+*** Tags
+    @code pascal
+    type
+        Tags = record
+            count: integer;
+            ids: set of integer;
+        end;
+    end;
+@end
